@@ -1,139 +1,85 @@
 package uni.pl.fmi;
 import java.util.*;
 
-/**
- * 
- */
 public class Item {
 
-    /**
-     * Default constructor
-     */
     public Item() {
     }
 
-    /**
-     * 
-     */
     private String name;
 
-    /**
-     * 
-     */
     private float price;
 
-    /**
-     * 
-     */
     private int count;
 
-    /**
-     * 
-     */
     private String brand;
 
+	private Set<Order> orders;
+
+	private Set<Category> category;
 
 
-    /**
-     * @return
-     */
     public String getName() {
         // TODO implement here
-        return "";
+        return name;
     }
 
-    /**
-     * @param name 
-     * @return
-     */
     public void setName(String name) {
         // TODO implement here
-        return null;
+        this.name=name;
     }
 
-    /**
-     * @return
-     */
     public float getPrice() {
         // TODO implement here
-        return 0.0f;
+        return price;
     }
 
-    /**
-     * @param price 
-     * @return
-     */
     public void setPrice(float price) {
         // TODO implement here
-        return null;
+       this.price=price;
     }
 
-    /**
-     * @return
-     */
     public int getCount() {
         // TODO implement here
-        return 0;
+        return count;
     }
 
-    /**
-     * @param count 
-     * @return
-     */
     public void setCount(int count) {
         // TODO implement here
-        return null;
+        this.count=count;
     }
 
-    /**
-     * @return
-     */
     public String getBrand() {
         // TODO implement here
-        return "";
+        return brand;
     }
 
-    /**
-     * @param brand 
-     * @return
-     */
     public void setBrand(String brand) {
         // TODO implement here
-        return null;
+        this.brand=brand;
     }
 
-    /**
-     * @return
-     */
-    public Set getOrders() {
-        // TODO implement here
-        return null;
+    public Set<Order> getOrders() {
+        Set<Order> orders = null;
+		// TODO implement here
+        return orders;
     }
 
-    /**
-     * @param orders 
-     * @return
-     */
-    public void setOrders(Set orders) {
-        // TODO implement here
-        return null;
+    public void setOrders(Set<Order> orders) {
+        this.orders=orders;
     }
 
-    /**
-     * @return
-     */
-    public Set getCategory() {
-        // TODO implement here
-        return null;
+
+    public Set<Category> getCategory() {
+        Set<Category> categories = null;
+		// TODO implement here
+        return categories;
     }
 
-    /**
-     * @param categories 
-     * @return
-     */
-    public void setCategories(Set categories) {
+
+    public void setCategories(Set<Category> categories) {
         // TODO implement here
-        return null;
+        this.category=categories;
     }
 
 }

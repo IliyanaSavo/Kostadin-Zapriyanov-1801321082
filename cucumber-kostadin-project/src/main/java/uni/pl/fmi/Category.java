@@ -6,105 +6,59 @@ import java.util.*;
  */
 public class Category {
 
-    /**
-     * Default constructor
-     */
     public Category() {
     }
 
-    /**
-     * 
-     */
-    
     private String name;
 
-    /**
-     * 
-     */
     private String type;
 
-    /**
-     * 
-     */
     private String filter;
 
-    /**
-     * 
-     */
     public Set<Item> items;
 
-    /**
-     * 
-     */
     public Set<Category> children;
 
-
-    /**
-     * @return
-     */
     public String getName() {
         // TODO implement here
-        return "";
+        return name;
     }
 
-    /**
-     * @param name 
-     * @return
-     */
+
     public void setName(String name) {
         // TODO implement here
-        return null;
+       this.name=name;
     }
 
-    /**
-     * @return
-     */
     public String getType() {
         // TODO implement here
-        return "";
+        return type;
     }
 
-    /**
-     * @param type 
-     * @return
-     */
+
     public void setType(String type) {
         // TODO implement here
-        return null;
+        this.type=type;
     }
 
-    /**
-     * @return
-     */
     public String getFilter() {
         // TODO implement here
-        return "";
+        return filter;
     }
 
-    /**
-     * @param filter 
-     * @return
-     */
     public void setFilter(String filter) {
         // TODO implement here
-        return null;
+        this.filter=filter;
     }
 
-    /**
-     * @return
-     */
-    public Set getItems() {
+    public Set<Item> getItems() {
         // TODO implement here
-        return null;
+        return items;
     }
 
-    /**
-     * @param Items 
-     * @return
-     */
-    public void setItems(Set Items) {
+    public void setItems(Set<Item> Items) {
         // TODO implement here
-        return null;
+       this.items=items;
     }
 
 }

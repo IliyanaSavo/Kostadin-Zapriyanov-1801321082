@@ -3,100 +3,66 @@ import java.util.*;
 
 public class Order {
 
-    public Order() {
-    }
-
-
     private int orderNumber;
 
     private String orderStatus;
 
     private double orderValue;
 
-    public User user;
+    public Set<User> user;
 
     public Set<Item> item;
 
     public int getOrderNumber() {
         // TODO implement here
-        return 0;
+        return orderNumber;
     }
 
-    /**
-     * @param orderNumber 
-     * @return
-     */
     public void setOrderNumber(int orderNumber) {
         // TODO implement here
-        return null;
+        this.orderNumber=orderNumber;
     }
 
-    /**
-     * @return
-     */
     public String getOrderStatus() {
         // TODO implement here
-        return "";
+        return orderStatus;
     }
 
-    /**
-     * @param orderStatus 
-     * @return
-     */
     public void setOrderStatus(String orderStatus) {
         // TODO implement here
-        return null;
+        this.orderStatus=orderStatus;
     }
 
-    /**
-     * @return
-     */
     public double getOrderValue() {
         // TODO implement here
-        return 0.0d;
+        return orderValue;
     }
 
-    /**
-     * @param orderValue 
-     * @return
-     */
+
     public void setOrderValue(double orderValue) {
         // TODO implement here
-        return null;
+        this.orderValue=orderValue;
     }
 
-    /**
-     * @return
-     */
-    public Set getUsers() {
-        // TODO implement here
-        return null;
+    public Set<User> getUsers() {
+        Set<User> users = null;
+		// TODO implement here
+        return users;
     }
 
-    /**
-     * @param users 
-     * @return
-     */
-    public void setUsers(Set users) {
+    public void setUsers(Set<User> users) {
         // TODO implement here
-        return null;
+        this.user=users;
     }
 
-    /**
-     * @return
-     */
-    public Set getItems() {
+    public Set<Item> getItems() {
         // TODO implement here
-        return null;
+        return item;
     }
 
-    /**
-     * @param Items 
-     * @return
-     */
-    public void setItems(Set Items) {
+    public void setItems(Set<Item> Items) {
         // TODO implement here
-        return null;
+        this.item=Items;
     }
 
 }
