@@ -1,50 +1,22 @@
 package uni.pl.fmi;
 import java.util.*;
 
-/**
- * 
- */
 public class Order {
 
-    /**
-     * Default constructor
-     */
     public Order() {
     }
 
-    /**
-     * 
-     */
-    public void Attribute1;
 
-    /**
-     * 
-     */
     private int orderNumber;
 
-    /**
-     * 
-     */
     private String orderStatus;
 
-    /**
-     * 
-     */
     private double orderValue;
 
-    /**
-     * 
-     */
     public User user;
 
-    /**
-     * 
-     */
     public Set<Item> item;
 
-    /**
-     * @return
-     */
     public int getOrderNumber() {
         // TODO implement here
         return 0;
