@@ -1,5 +1,7 @@
 package uni.pl.fmi.models;
 
+import uni.pl.fmi.services.LoginService;
+
 public class LoginScreenModel {
 
 	private String username;
@@ -23,7 +25,7 @@ public class LoginScreenModel {
 
 	public void clickLoginButton() {
 		
-		
+		message = LoginService.login(username, password);
 	}
 
 	public String getLoginMessage() {
