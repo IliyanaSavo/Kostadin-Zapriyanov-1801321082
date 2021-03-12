@@ -1,39 +1,40 @@
 package uni.pl.fmi;
 
+import static org.junit.Assert.assertEquals;
+
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import uni.pl.fmi.models.LoginScreenModel;
 
 public class LoginSteps {
+	
+	LoginScreenModel loginScreen = new LoginScreenModel(); 
 
 @Given("^?Потребителят отваря екрана за вход в системата$")
 public void openLoginScreen() throws Throwable {
-    
+	loginScreen.navigateToMe();
 }
 
 @When("^Потребителят въведе потребителското си име \"([^\"]*)\"$")
-public void addUsername(String arg1) throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
+public void addUsername(final String username) throws Throwable {
+	loginScreen.setUsername(username);
 }
 
 @When("^Въведе парола \"([^\"]*)\"$")
-public void addPassword(String arg1) throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
+public void addPassword(final String password) throws Throwable {
+     loginScreen.setPassword(password);
 }
 
 @When("^Натисне бутона за вход в системата$")
 public void clickLoginButton() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
+	loginScreen.clickLoginButton();
 }
 
-@Then("^Вижда съобщение за успех$")
-public void checkLoginMessage() throws Throwable {
-    // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
+@Then("^Вижда съобщение \"([^\"]*)\"\\.$")
+public void checkLoginMessage(String expectedMessage) throws Throwable {
+    assertEquals(expectedMessage, loginScreen.getLoginMessage());
 }
 
 }
