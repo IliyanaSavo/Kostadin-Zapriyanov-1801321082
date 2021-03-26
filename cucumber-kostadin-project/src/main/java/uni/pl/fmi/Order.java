@@ -13,7 +13,82 @@ public class Order {
 
     public Set<Item> item;
 
-    public int getOrderNumber() {
+	private String arts;
+
+	private String startOrder;
+
+	private String enterNames;
+
+	private String enterPhone;
+
+	private String enterAdress;
+
+    public Order(String arts, String startOrder, String enterNames, String enterAdress, String enterPhone) {
+		super();
+		this.arts = arts;
+		this.startOrder = startOrder;
+		this.enterNames = enterNames;
+		this.enterAdress = enterAdress;
+		this.enterPhone = enterPhone;
+	}
+
+	public Set<User> getUser() {
+		return user;
+	}
+
+	public void setUser(Set<User> user) {
+		this.user = user;
+	}
+
+	public Set<Item> getItem() {
+		return item;
+	}
+
+	public void setItem(Set<Item> item) {
+		this.item = item;
+	}
+
+	public String getArts() {
+		return arts;
+	}
+
+	public void setArts(String arts) {
+		this.arts = arts;
+	}
+
+	public String getStartOrder() {
+		return startOrder;
+	}
+
+	public void setStartOrder(String startOrder) {
+		this.startOrder = startOrder;
+	}
+
+	public String getEnterNames() {
+		return enterNames;
+	}
+
+	public void setEnterNames(String enterNames) {
+		this.enterNames = enterNames;
+	}
+
+	public String getEnterPhone() {
+		return enterPhone;
+	}
+
+	public void setEnterPhone(String enterPhone) {
+		this.enterPhone = enterPhone;
+	}
+
+	public String getEnterAdress() {
+		return enterAdress;
+	}
+
+	public void setEnterAdress(String enterAdress) {
+		this.enterAdress = enterAdress;
+	}
+
+	public int getOrderNumber() {
         // TODO implement here
         return orderNumber;
     }
